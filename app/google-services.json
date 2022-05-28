@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "951961817233",
+    "project_id": "uas-smt-2",
+    "storage_bucket": "uas-smt-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951961817233:android:ab3473cebc16d849652f30",
+        "android_client_info": {
+          "package_name": "com.briant.smt2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951961817233-61kuirua9h8l5ng9pibnvfnqi2kg9r74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9zI3pX8-EhpM6b-x1oVHSnZRQfqi2Duc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951961817233-61kuirua9h8l5ng9pibnvfnqi2kg9r74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
