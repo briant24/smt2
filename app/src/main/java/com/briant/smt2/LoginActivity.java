@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                             String pass = data.child("password").getValue().toString();
                             if(pass.equals(password)){
                                 String level = data.child("usrLvl").getValue().toString();
-                                if(level.equals("0")) {
+                                if(level.equals("1")) {
                                     String nama = data.child("nama").getValue().toString();
                                     Intent adminMenu = new Intent(getApplicationContext(), MainActivity.class);
                                     adminMenu.putExtra("nama", nama);

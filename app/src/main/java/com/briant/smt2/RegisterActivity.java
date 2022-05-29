@@ -18,8 +18,11 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -59,7 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Alamat = alamat.getText().toString().trim();
                 Username = username.getText().toString().trim();
                 Password = password.getText().toString().trim();
-                if(Nama.isEmpty()){
+                if (Nama.isEmpty()){
                     nama.setError("Data belum dimasukkan");
                     nama.requestFocus();
                 }else if (Nohp.isEmpty()) {
@@ -71,8 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }else if (Username.isEmpty()){
                     username.setError("Data belum dimasukkan");
                     username.requestFocus();
-                }
-                else if (Password.isEmpty()) {
+                }else if (Password.isEmpty()) {
                     password.setError("Data belum dimasukkan");
                     password.requestFocus();
                 }else if (uri == null){
@@ -90,7 +92,6 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
-
     private void uploaddata(Uri uri) {
         Nama = nama.getText().toString().trim();
         Nohp = nohp.getText().toString().trim();
@@ -111,6 +112,9 @@ public class RegisterActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Berhasil!!", Toast.LENGTH_SHORT).show();
                         progressBar.setVisibility(View.GONE);
                         hapus();
+                        Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                        intent.putExtra("USERNAME",Username);
+                        startActivity(intent);
                     }
                 });
             }
