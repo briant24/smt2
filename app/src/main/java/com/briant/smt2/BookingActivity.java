@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,11 +21,9 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
 import com.google.firebase.FirebaseOptions;
 import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 public class BookingActivity extends AppCompatActivity {
@@ -61,6 +58,21 @@ public class BookingActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull HandlerLapangan model) {
                 holder.setDetails(getApplicationContext(), model.getNamalap(), model.getHarga(), model.getJenis(), model.getUrl());
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String nama = model.getNamalap().toString().trim();
+                        String harga = model.getHarga().toString().trim();
+                        String jenis = model.getJenis().toString().trim();
+                        String url = model.getUrl().toString().trim();
+                        Intent intent = new Intent(getApplicationContext(), PesanActivity.class);
+                        intent.putExtra("namaLap", nama);
+                        intent.putExtra("hargaLap", harga);
+                        intent.putExtra("jenisLap", jenis);
+                        intent.putExtra("urlImage", url);
+                        startActivity(intent);
+                    }
+                });
             }
 
             @NonNull
