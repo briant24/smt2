@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".PesanActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddFieldActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

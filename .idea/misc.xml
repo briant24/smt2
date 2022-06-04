@@ -8,6 +8,7 @@
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/border_img.xml" value="0.1045" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/custom_button.xml" value="0.1185" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/custom_button_green.xml" value="0.1925" />
+        <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/custom_button_square.xml" value="0.1315" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/custom_input.xml" value="0.186" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/gradient_2.xml" value="0.1185" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/gradient_green.xml" value="0.1925" />
@@ -15,12 +16,16 @@
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/ic_lock.xml" value="0.186" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/ic_user.xml" value="0.1" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/shadow_text.xml" value="0.1925" />
+        <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/drawable/spinner_item.xml" value="0.1315" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.14424364123159303" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1900352733686067" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout/activity_add_field.xml" value="0.14965277777777777" />
+        <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout/activity_booking.xml" value="0.14965277777777777" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout/activity_pesan.xml" value="0.14965277777777777" />
         <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout/activity_register.xml" value="0.18" />
+        <entry key="..\:/Users/michi/AndroidStudioProjects/AkhirSmt2/app/src/main/res/layout/blog_row.xml" value="0.14965277777777777" />
       </map>
     </option>
   </component>

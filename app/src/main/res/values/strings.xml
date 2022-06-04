@@ -11,4 +11,9 @@
     <string name="login_failed">"Login failed"</string>
     <string name="register"><u>Daftar</u></string>
     <string name="masuk"><u>Masuk</u></string>
+    <string-array name="jenislapangan">
+        <item>Kayu</item>
+        <item>Vinyl</item>
+        <item>Rumput</item>
+    </string-array>
 </resources>

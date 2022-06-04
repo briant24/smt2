@@ -19,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
         btnlogout = findViewById(R.id.btn_logout);
         btnpesan = findViewById(R.id.btnPesan);
         btnlapangan = findViewById(R.id.btnLap);
+        btnpesan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), BookingActivity.class);
+                startActivity(intent);
+            }
+        });
         btnlapangan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

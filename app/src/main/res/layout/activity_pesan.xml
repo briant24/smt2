@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".PesanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/layoutatas">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardlogo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="30dp"
+                android:elevation="30dp"
+                android:layout_marginTop="-30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_gradient">
+
+                    <ImageView
+                        android:layout_marginTop="25dp"
+                        android:paddingTop="10dp"
+                        android:id="@+id/logo"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/hfcombined" />
+                    <TextView
+                        android:layout_below="@id/logo"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="DETAIL LAPANGAN" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutbawah"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="10">
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/cardgambar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvNama"
+            style="@style/shadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Nama Lapangan" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/tvNama"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/rp"
+            style="@style/shadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="Rp. " />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/tvNama"
+            app:layout_constraintLeft_toRightOf="@id/rp"
+            android:id="@+id/harga"
+            style="@style/shadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Harga" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/tvNama"
+            app:layout_constraintLeft_toRightOf="@id/harga"
+            android:id="@+id/jam"
+            style="@style/shadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="/Jam" />
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/rp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/jen"
+            style="@style/shadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="Jenis : " />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/rp"
+            app:layout_constraintLeft_toRightOf="@id/jen"
+            android:layout_marginTop="10dp"
+            android:id="@+id/jenis"
+            style="@style/shadowText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Jenis Lapangan" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardgambar"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_img">
+
+                <ImageView
+                    android:id="@+id/imgfocus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/hfcombined" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonpsn"
+        android:background="@drawable/custom_button_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesan Sekarang" />
+</LinearLayout>
